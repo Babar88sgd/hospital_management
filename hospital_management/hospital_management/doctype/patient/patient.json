@@ -1,0 +1,183 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-04-11 15:15:16.463130",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_uwby",
+  "amended_from",
+  "naming_series",
+  "registration_date",
+  "full_name",
+  "cnic__passport_no",
+  "date_of_birth",
+  "age",
+  "column_break_ymba",
+  "gender",
+  "blood_group",
+  "marital_status",
+  "phone_number",
+  "email",
+  "column_break_dpya",
+  "guardian_name",
+  "relation_with_patient",
+  "emergency_contact_name",
+  "emergency_contact_number",
+  "insurance_details",
+  "column_break_sdue",
+  "address"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_uwby",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Patient",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "\nPAT-.YYYY.-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "cnic__passport_no",
+   "fieldtype": "Data",
+   "label": "CNIC / Passport No."
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "age",
+   "fieldtype": "Data",
+   "label": "Age",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_ymba",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "gender",
+   "fieldtype": "Select",
+   "label": "Gender",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fieldname": "blood_group",
+   "fieldtype": "Select",
+   "label": "Blood Group",
+   "options": "\nA+\nA-\nB+\nB-\nAB+\nAB-\nO+\nO-"
+  },
+  {
+   "fieldname": "marital_status",
+   "fieldtype": "Select",
+   "label": "Marital Status",
+   "options": "\nSingle\nMarried\nDivorced\nWidowed"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Phone",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "column_break_dpya",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "emergency_contact_name",
+   "fieldtype": "Data",
+   "label": "Emergency Contact Name"
+  },
+  {
+   "fieldname": "emergency_contact_number",
+   "fieldtype": "Phone",
+   "label": "Emergency Contact Number"
+  },
+  {
+   "fieldname": "guardian_name",
+   "fieldtype": "Data",
+   "label": "Guardian Name"
+  },
+  {
+   "fieldname": "insurance_details",
+   "fieldtype": "Data",
+   "label": "Insurance Details"
+  },
+  {
+   "fieldname": "column_break_sdue",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "label": "Registration Date",
+   "options": "\n"
+  },
+  {
+   "fieldname": "relation_with_patient",
+   "fieldtype": "Data",
+   "label": "Relation with Patient"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-11 16:31:31.710997",
+ "modified_by": "Administrator",
+ "module": "hospital_management",
+ "name": "Patient",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

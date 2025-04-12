@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-04-12 11:35:51.959724",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "available_timings_no",
+  "day",
+  "start_time",
+  "end_time",
+  "locationbranch",
+  "consultation_type",
+  "column_break_nxeb",
+  "room_no__department",
+  "max_appointments_allowed",
+  "active",
+  "notes_optional"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "\nTIME-.YYYY.-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "day",
+   "fieldtype": "Select",
+   "label": "Day",
+   "options": "\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\nSunday"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End time"
+  },
+  {
+   "fieldname": "locationbranch",
+   "fieldtype": "Data",
+   "label": "Location/Branch"
+  },
+  {
+   "fieldname": "consultation_type",
+   "fieldtype": "Select",
+   "label": "Consultation Type",
+   "options": "\nIn-Person\nOnline\nTelephonic\nHome Visit\nVideo Call"
+  },
+  {
+   "fieldname": "column_break_nxeb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "available_timings_no.naming_series",
+   "fieldname": "room_no__department",
+   "fieldtype": "Data",
+   "label": "Room No. / Department"
+  },
+  {
+   "fieldname": "max_appointments_allowed",
+   "fieldtype": "Int",
+   "label": "Max Appointments Allowed"
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "notes_optional",
+   "fieldtype": "Small Text",
+   "label": "Notes (Optional)"
+  },
+  {
+   "fieldname": "available_timings_no",
+   "fieldtype": "Link",
+   "label": "Available Timings No",
+   "options": "Available Timings",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-12 12:30:48.426341",
+ "modified_by": "Administrator",
+ "module": "hospital_management",
+ "name": "Timing Schedule",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

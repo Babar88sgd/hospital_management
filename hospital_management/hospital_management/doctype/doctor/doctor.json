@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-04-11 16:42:49.053441",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "naming_series",
+  "disabled",
+  "registration_date",
+  "full_name",
+  "specialization",
+  "column_break_jkik",
+  "qualification",
+  "phone_number",
+  "experience",
+  "email",
+  "column_break_vfiw",
+  "fee_per_consultation",
+  "clinic_address",
+  "timings_details_section",
+  "clinical_schedule",
+  "tab_break_zcom"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "\nDR-.YYYY.-.#####",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "default": "Today",
+   "fieldname": "registration_date",
+   "fieldtype": "Date",
+   "label": "Registration Date"
+  },
+  {
+   "fieldname": "full_name",
+   "fieldtype": "Data",
+   "label": "Full Name"
+  },
+  {
+   "fieldname": "specialization",
+   "fieldtype": "Select",
+   "label": "Specialization",
+   "options": "\nCardiologist\nDermatologist\nEndocrinologist\nENT Specialist\nGastroenterologist\nGeneral Physician\nGeneral Surgeon\nGynecologist\nHematologist\nNeurologist\nNeurosurgeon\nOncologist\nOphthalmologist\nOrthopedic Surgeon\nPediatrician\nPlastic Surgeon\nPsychiatrist\nPulmonologist\nRadiologist\nUrologist"
+  },
+  {
+   "fieldname": "qualification",
+   "fieldtype": "Data",
+   "label": "Qualification"
+  },
+  {
+   "fieldname": "column_break_jkik",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Int",
+   "label": "Experience"
+  },
+  {
+   "fieldname": "phone_number",
+   "fieldtype": "Data",
+   "label": "Phone Number"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email"
+  },
+  {
+   "fieldname": "clinic_address",
+   "fieldtype": "Small Text",
+   "label": "Clinic Address"
+  },
+  {
+   "fieldname": "fee_per_consultation",
+   "fieldtype": "Currency",
+   "label": "Fee Per Consultation"
+  },
+  {
+   "fieldname": "column_break_vfiw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tab_break_zcom",
+   "fieldtype": "Tab Break",
+   "label": "Connections"
+  },
+  {
+   "fieldname": "timings_details_section",
+   "fieldtype": "Section Break",
+   "label": "Timings Details"
+  },
+  {
+   "fieldname": "clinical_schedule",
+   "fieldtype": "Table",
+   "label": "Clinical Schedule",
+   "options": "Timing Schedule"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-12 12:14:23.334842",
+ "modified_by": "Administrator",
+ "module": "hospital_management",
+ "name": "Doctor",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

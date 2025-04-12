@@ -1,0 +1,52 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-12 13:06:48.673368",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "charge_type",
+  "description",
+  "amount",
+  "is_estimate"
+ ],
+ "fields": [
+  {
+   "fieldname": "charge_type",
+   "fieldtype": "Select",
+   "label": "Charge Type",
+   "options": "\nDoctor Fee\nRoom Charges\nLab Test\nSurgery\nDelivery\nEmergency\nPharmacy\nConsultation\nOther"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "amount",
+   "fieldtype": "Currency",
+   "label": "Amount"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_estimate",
+   "fieldtype": "Check",
+   "label": "Is Estimate"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-12 13:35:22.083238",
+ "modified_by": "Administrator",
+ "module": "hospital_management",
+ "name": "Invoice Charges",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

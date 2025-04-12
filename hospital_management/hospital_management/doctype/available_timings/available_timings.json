@@ -1,0 +1,125 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2025-04-12 09:47:28.925569",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "doctor",
+  "doctor_name",
+  "day",
+  "start_time",
+  "end_time",
+  "locationbranch",
+  "consultation_type",
+  "column_break_nxeb",
+  "room_no__department",
+  "max_appointments_allowed",
+  "active",
+  "notes_optional"
+ ],
+ "fields": [
+  {
+   "fieldname": "day",
+   "fieldtype": "Select",
+   "label": "Day",
+   "options": "\nMonday\nTuesday\nWednesday\nThursday\nFriday\nSaturday\nSunday"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start time"
+  },
+  {
+   "fieldname": "end_time",
+   "fieldtype": "Time",
+   "label": "End time"
+  },
+  {
+   "fieldname": "locationbranch",
+   "fieldtype": "Data",
+   "label": "Location/Branch"
+  },
+  {
+   "fieldname": "consultation_type",
+   "fieldtype": "Select",
+   "label": "Consultation Type",
+   "options": "\nIn-Person\nOnline\nTelephonic\nHome Visit\nVideo Call"
+  },
+  {
+   "fieldname": "column_break_nxeb",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "room_no__department",
+   "fieldtype": "Data",
+   "label": "Room No. / Department"
+  },
+  {
+   "fieldname": "max_appointments_allowed",
+   "fieldtype": "Int",
+   "label": "Max Appointments Allowed"
+  },
+  {
+   "fieldname": "notes_optional",
+   "fieldtype": "Small Text",
+   "label": "Notes (Optional)"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "\nTIME-.YYYY.-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "doctor",
+   "fieldtype": "Link",
+   "label": "Doctor",
+   "options": "Doctor"
+  },
+  {
+   "fetch_from": "doctor.full_name",
+   "fieldname": "doctor_name",
+   "fieldtype": "Data",
+   "label": "Doctor Name",
+   "options": "Doctor"
+  },
+  {
+   "default": "0",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-04-12 12:18:22.632342",
+ "modified_by": "Administrator",
+ "module": "hospital_management",
+ "name": "Available Timings",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

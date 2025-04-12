@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-12 12:46:26.907548",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "medicine",
+  "dosage",
+  "dosage_frequency",
+  "duration",
+  "route_of_administration",
+  "column_break_xfqc",
+  "instructions",
+  "timing",
+  "quantity",
+  "section_break_szit",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "medicine",
+   "fieldtype": "Link",
+   "label": "Medicine",
+   "options": "Item"
+  },
+  {
+   "fieldname": "dosage",
+   "fieldtype": "Data",
+   "label": "Dosage"
+  },
+  {
+   "fieldname": "dosage_frequency",
+   "fieldtype": "Select",
+   "label": "Dosage Frequency",
+   "options": "\nOnce a day\nTwice a day\nThrice a day\nEvery 6 hours\nEvery 8 hours\nAs needed\nBefore sleep"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Data",
+   "label": "Duration"
+  },
+  {
+   "fieldname": "route_of_administration",
+   "fieldtype": "Select",
+   "label": "Route of Administration\t",
+   "options": "\nOral\nTopical\nIntravenous (IV)\nIntramuscular (IM)\nSubcutaneous\nInhalation\nSublingual\nRectal\nNasal\nOphthalmic\nOtic\nTransdermal\nOther"
+  },
+  {
+   "fieldname": "column_break_xfqc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "instructions",
+   "fieldtype": "Small Text",
+   "label": "Instructions"
+  },
+  {
+   "fieldname": "timing",
+   "fieldtype": "Select",
+   "label": "Timing",
+   "options": "\nBefore Breakfast\nAfter Breakfast\nBefore Lunch\nAfter Lunch\nBefore Dinner\nAfter Dinner\nMorning\nAfternoon\nEvening\nNight\nEvery 6 Hours\nEvery 8 Hours\nEvery 12 Hours\nOnce Daily\nTwice Daily\nThrice Daily\nAs Needed"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "section_break_szit",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-12 12:52:39.773929",
+ "modified_by": "Administrator",
+ "module": "hospital_management",
+ "name": "Medicine",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
