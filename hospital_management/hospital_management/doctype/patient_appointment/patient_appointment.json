@@ -12,12 +12,14 @@
   "date",
   "patient",
   "doctor",
-  "date_and_time",
+  "appointment_date",
+  "appointment_time",
   "column_break_eisq",
   "patient_name",
   "doctor_name",
   "status",
   "appointment_fee",
+  "token_number",
   "section_break_lfpt",
   "symptoms"
  ],
@@ -69,19 +71,17 @@
   {
    "fetch_from": "patient.full_name",
    "fieldname": "patient_name",
-   "fieldtype": "Data",
-   "label": "Patient Name"
+   "fieldtype": "Link",
+   "label": "Patient Name",
+   "options": "Patient",
+   "read_only": 1
   },
   {
    "fetch_from": "doctor.full_name",
    "fieldname": "doctor_name",
    "fieldtype": "Data",
-   "label": "Doctor Name"
-  },
-  {
-   "fieldname": "date_and_time",
-   "fieldtype": "Datetime",
-   "label": "Date and Time"
+   "label": "Doctor Name",
+   "read_only": 1
   },
   {
    "fieldname": "status",
@@ -103,13 +103,29 @@
    "fieldname": "appointment_fee",
    "fieldtype": "Data",
    "label": "Appointment Fee"
+  },
+  {
+   "fieldname": "token_number",
+   "fieldtype": "Int",
+   "label": "Token Number"
+  },
+  {
+   "fieldname": "appointment_date",
+   "fieldtype": "Date",
+   "label": "Appointment Date",
+   "options": "Doctor"
+  },
+  {
+   "fieldname": "appointment_time",
+   "fieldtype": "Time",
+   "label": "Appointment Time"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-04-11 16:40:14.315456",
+ "modified": "2025-04-16 13:23:50.651869",
  "modified_by": "Administrator",
  "module": "hospital_management",
  "name": "Patient Appointment",

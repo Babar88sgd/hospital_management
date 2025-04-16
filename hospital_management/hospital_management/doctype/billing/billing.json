@@ -9,8 +9,9 @@
   "section_break_glju",
   "amended_from",
   "naming_series",
-  "date",
+  "posting_date",
   "patient",
+  "company",
   "column_break_xufm",
   "patient_name",
   "doctor",
@@ -25,7 +26,12 @@
   "remarks",
   "column_break_tghg",
   "charges",
-  "total_amount"
+  "total_amount",
+  "source_exchange_rate",
+  "signature_section",
+  "doctor_signatures",
+  "column_break_gpmy",
+  "attendant_signatures"
  ],
  "fields": [
   {
@@ -48,12 +54,6 @@
    "label": "Naming Series",
    "options": "\nMED-BILL-.YYYY.-",
    "read_only": 1
-  },
-  {
-   "default": "Today",
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "label": "Date"
   },
   {
    "fieldname": "patient",
@@ -139,12 +139,50 @@
   {
    "fieldname": "column_break_xufm",
    "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "default": "Today",
+   "fieldname": "posting_date",
+   "fieldtype": "Date",
+   "label": "Posting Date"
+  },
+  {
+   "fieldname": "source_exchange_rate",
+   "fieldtype": "Link",
+   "label": "Currency",
+   "options": "Currency"
+  },
+  {
+   "fieldname": "signature_section",
+   "fieldtype": "Section Break",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "doctor_signatures",
+   "fieldtype": "Signature",
+   "label": "Doctor Signatures"
+  },
+  {
+   "fieldname": "column_break_gpmy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "attendant_signatures",
+   "fieldtype": "Signature",
+   "label": "Attendant Signatures"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2025-04-12 13:20:24.983412",
+ "modified": "2025-04-14 17:37:33.401212",
  "modified_by": "Administrator",
  "module": "hospital_management",
  "name": "Billing",
