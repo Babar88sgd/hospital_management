@@ -1,6 +1,6 @@
 app_name = "hospital_management"
 app_title = "hospital_management"
-app_publisher = "﷽اBabar Mehmood"
+app_publisher = "Babar Mehmood"
 app_description = "A comprehensive Hospital Management System for ERPNext"
 app_email = "babar88sgd@gmail.com"
 app_license = "mit"
