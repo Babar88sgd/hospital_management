@@ -23,7 +23,6 @@
   "column_break_dpya",
   "guardian_name",
   "relation_with_patient",
-  "emergency_contact_name",
   "emergency_contact_number",
   "insurance_details",
   "column_break_sdue",
@@ -124,11 +123,6 @@
    "label": "Address"
   },
   {
-   "fieldname": "emergency_contact_name",
-   "fieldtype": "Data",
-   "label": "Emergency Contact Name"
-  },
-  {
    "fieldname": "emergency_contact_number",
    "fieldtype": "Data",
    "label": "Emergency Contact Number"
@@ -178,8 +172,8 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-04-16 14:27:54.902987",
- "modified_by": "Administrator",
+ "modified": "2025-04-16 17:53:34.105240",
+ "modified_by": "b.mehmood@mediplas.com",
  "module": "hospital_management",
  "name": "Patient",
  "naming_rule": "By \"Naming Series\" field",
